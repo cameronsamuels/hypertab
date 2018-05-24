@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "HyperTAB",
+	"description": "Open every link in a new tab",
+	"version":"1.0",
+	"background":{"scripts":["js/b.js"]},
+	"icons":{"128":"ico/icon.png"},
+	"content_scripts":[{
+		"js":["js/c.js"],
+		"matches":["*://*/*"]
+	}],
+	"browser_action":{},
+	"permissions":["storage", "tabs", "*://*/*"]
+}
